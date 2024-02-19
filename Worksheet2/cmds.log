@@ -1,0 +1,21 @@
+406	  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+407	 grep "United States" "Global Youtube Statistics.csv"
+408	 ls
+409	 ls -latr
+410	 grep "United States" "'Global Youtube Statistics.csv'"
+411	 grep "United States" "'Global YouTube Statistics.csv'"
+412	 vi 'Global YouTube Statistics.csv' 
+413	 grep "United States" 'Global YouTube Statistics.csv'
+414	 grep "Music" 'Global YouTube Statistics.csv' 
+415	 grep "Music" 'Global YouTube Statistics.csv' -wc
+416	 grep "Music" 'Global YouTube Statistics.csv' -wc >> counts.txt
+417	 ls
+418	 vi counts.txt
+419	 grep "Music" 'Global YouTube Statistics.csv' -c
+420	 grep -wc "Music" 'Global YouTube Statistics.csv' 
+421	 grep "Music" 'Global YouTube Statistics.csv' wc
+422	 grep wc "Music" 'Global YouTube Statistics.csv' 
+423	 grep "Music" 'Global YouTube Statistics.csv' | wc -l
+424	 history 
+425	 history 18
+426	 history 20 > cmds.log
