@@ -1,0 +1,73 @@
+    1  ls
+    2  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/spotify-2023.csv
+    3  ls
+    4  passwd
+    5  ls
+    6  mkdir sampleProject
+    7  ls
+    8  ls -ltr
+    9  cd sampleProject
+   10  touch sampleFile.txt
+   11  git init
+   12  git add .
+   13  git status
+   14  git config --global user.email "np.alexgiang@gmail.com"
+   15  git config --global user.name "Alex Giang"
+   16  git config --global user.name "Areisu"
+   17  ls
+   18  vi spotify-2023.csv
+   19  ls
+   20  more --version
+   21  less --version
+   22  ls
+   23  vi spotify-2023.csv
+   24  ls
+   25  ls -latr
+   26  delete spotify-2023.csv.swap
+   27  del
+   28  remove
+   29  help
+   30  rm 
+   31  rm spotify-2023.csv.swap
+   32  ls
+   33  ls -latr
+   34  vi spotify-2023.csv
+   35  ls -latr
+   36  vim spotify-2023.csv
+   37  vi spotify-2023.csv
+   38  head spotify-2023.csv
+   39  vi test.txt
+   40  sort test.txt 
+   41  sort test.txt > sortedTest.txt
+   42  ls
+   43  cat sortedTest.txr
+   44  cat sortedTest.txt 
+   45  wget www.github.com
+   46  ls
+   47  cmds.log
+   48  history
+   49  exit
+   50  ls
+   51  ls -lattr
+   52  head spotify-2023.csv
+   53  vi spotify-2023.csv
+   54  git config --global user.email "np.alexgiang@gmail.com"
+   55  git config --global user.name "Areisu"
+   56  vi sample.txt
+   57  wc sample.txt
+   58  cat sample.txt
+   59  vi sample.txt
+   60  wc sample.txt
+   61  wc -l sample.txt
+   62  grep line3 sample.txt
+   63  cat sample.txt
+   64  grep line5 sample.txt
+   65  grep -i line5 sample.txt
+   66  vi sample.txt
+   67  help
+   68  help grep
+   69  info grep
+   70  grep -i Line1
+   71  ls -a
+   72  wget www.github.com
+   73  history > cmds.log
