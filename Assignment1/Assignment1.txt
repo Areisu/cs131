@@ -1,0 +1,11 @@
+2) /mnt/scratch/SP24_CS131_Jyotika/alexsp24
+2) -bash: /mnt/scratch/SP24_CS131_Jyotika/alexsp24: Is a directory
+3) UID: 1202 | GID: 1202 found using 'cat /etc/passwd'
+4) In the "myDir" directory, I can 'cd' into the directory, use 'ls' and 'ls -l', but I no longer have permission to create files under it.
+
+6)               total        used        free      shared  buff/cache   available
+Mem:       73080640    32731456    21051520     3657472    19297664    35198464
+Swap:       4218816           0     4218816
+9) The file in '/etc/os-release' contains the OS version information.
+10) The permission given to all users is 7 (read, write and execute).
+

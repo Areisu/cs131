@@ -1,0 +1,93 @@
+608	 mkdir Assignment1
+609	 printenv
+610	 clear
+611	 ls
+612	 cd Assignment1
+613	 vi Assignment1.txt
+614	 ls
+615	 cd ~
+616	 printenv
+617	 pwd
+618	 shell
+619	 echo shell
+620	 echo /bin/bash
+621	 pwd
+622	 cd Assignemnt1
+623	 cd Assignment1
+624	 vi Assignment1.txt
+625	 cd ~
+626	 ~
+627	 vi Assignment1/Assignemnt1.txt
+628	 vi Assignment1/Assignment1.txt
+629	 grep /etc/passwd
+630	 cd /etc/
+631	 ls
+632	 cd ~
+633	 cd /etc/
+634	 ls -latr
+635	 grep passwd
+636	 grep group
+637	 cat passwd
+638	 cd ~
+639	 cat /etc/passwd
+640	 cat /etc/group
+641	 vi Assignment1/Assignment1.txt
+642	 cd Assignemnt1
+643	 cd Assignment1
+644	 mkdir myDir
+645	 ls
+646	 man chmod
+647	 chmod 555 myDir
+648	 ls -latr
+649	 vi Assignment1/Assignment1.txt
+650	 ls
+651	 cd myDir
+652	 ls
+653	 cd Assignment1/myDir
+654	 ls
+655	 cd ~
+656	 cd Assignment1/myDir
+657	 ls
+658	 ls -l
+659	 touch test.txt
+660	 cd Assignment1
+661	 cd ..
+662	 vi Assignment1.txt
+663	 mkdir myDir2
+664	 mkdir myDir3
+665	 ls
+666	 cd myDir2
+667	 touch myFile.txt
+668	 ls
+669	 mv myFile.txt myDir3
+670	 ls
+671	 cd ..
+672	 ls
+673	 cd myDir3
+674	 ls
+675	 cd ..
+676	 cd myDir3
+677	 ls
+678	 cd ..
+679	 cd myDir2
+680	 ls
+681	 rm myDir3
+682	 touch myFile.txt
+683	 ls
+684	 cd ..
+685	 mv myDir2/myFile.txt myDir3
+686	 ls
+687	 cd myDir3
+688	 ls
+689	 cd ~
+690	 man free
+691	 free
+692	 vi Assignment1/Assignment1.txt
+693	 cat /etc/os-release
+694	 vi Assignment1/Assignment1.txt
+695	 cd /etc/
+696	 ls -latr | grep os-release
+697	 ls
+698	 ls -latr
+699	 ls -latr | grep os-release
+700	 cd ..
