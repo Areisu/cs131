@@ -1,4 +1,4 @@
-608	 mkdir Assignment1
+608	 mkdir Assignment1 (Question 1)
 609	 printenv
 610	 clear
 611	 ls
@@ -11,12 +11,12 @@
 618	 shell
 619	 echo shell
 620	 echo /bin/bash
-621	 pwd
+621	 pwd (Question 2 - Echo shell)
 622	 cd Assignemnt1
 623	 cd Assignment1
 624	 vi Assignment1.txt
 625	 cd ~
-626	 ~
+626	 ~ (Question 2 - Echo home directory path)
 627	 vi Assignment1/Assignemnt1.txt
 628	 vi Assignment1/Assignment1.txt
 629	 grep /etc/passwd
@@ -29,12 +29,12 @@
 636	 grep group
 637	 cat passwd
 638	 cd ~
-639	 cat /etc/passwd
+639	 cat /etc/passwd (Question 3 - UID/GID)
 640	 cat /etc/group
 641	 vi Assignment1/Assignment1.txt
 642	 cd Assignemnt1
 643	 cd Assignment1
-644	 mkdir myDir
+644	 mkdir myDir (Question 4 - mkdir & chmod)
 645	 ls
 646	 man chmod
 647	 chmod 555 myDir
@@ -53,13 +53,13 @@
 660	 cd Assignment1
 661	 cd ..
 662	 vi Assignment1.txt
-663	 mkdir myDir2
+663	 mkdir myDir2 (Question 5)
 664	 mkdir myDir3
 665	 ls
 666	 cd myDir2
-667	 touch myFile.txt
+667	 touch myFile.txt (Question 6)
 668	 ls
-669	 mv myFile.txt myDir3
+669	 mv myFile.txt myDir3 
 670	 ls
 671	 cd ..
 672	 ls
@@ -75,18 +75,18 @@
 682	 touch myFile.txt
 683	 ls
 684	 cd ..
-685	 mv myDir2/myFile.txt myDir3
+685	 mv myDir2/myFile.txt myDir3 (Question 6 - mv command)
 686	 ls
 687	 cd myDir3
 688	 ls
 689	 cd ~
-690	 man free
-691	 free
+690	 man free 
+691	 free (Question 6 - 'free' command)
 692	 vi Assignment1/Assignment1.txt
-693	 cat /etc/os-release
+693	 cat /etc/os-release (Question 9 - OS Version Information)
 694	 vi Assignment1/Assignment1.txt
 695	 cd /etc/
-696	 ls -latr | grep os-release
+696	 ls -latr | grep os-release (Question 10 - OS Version Information Permissions)
 697	 ls
 698	 ls -latr
 699	 ls -latr | grep os-release
