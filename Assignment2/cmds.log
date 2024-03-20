@@ -1,0 +1,21 @@
+953	 find /etc -type f > one.txt 2> two.txt (Question 1)
+954	 ls
+955	 cat one.txt
+956	 cat two.txgt
+957	 cat two.txt
+958	 clear
+959	 ls
+960	 vim Assignment2.txt
+961	 cat two.txt
+962	 vim Assignment2.txt
+963	 wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+964	 cat Global\ YouTube\ Statistics.csv 
+981	 cut -d',' -f20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -rn | head -n 3 | awk '{print $2 $3" with "$1" channels"}' (Question 2)
+987	 ps aux 
+988	 ps aux | grep alexsp24 (Question 3)
+989	 vim Assignment2.txt 
+990	 vi file.txt (Question 4)
+991	 ps aux | grep alexsp24
+1004	 ps aux
+1005	 ps aux | grep systemd (Question 5)
+1006	 vim Assignment2.txt 

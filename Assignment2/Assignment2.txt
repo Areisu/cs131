@@ -1,0 +1,83 @@
+1a) We are trying to find the paths to the files in the "etc" directory which will then be shown in the two text files.
+1b) After using cat on "one.txt" and "two.txt", "one.txt" has all the paths to files that are in /etc/ directory that I have permissions to, while "two.txt" shows the paths to files that I have no permissions to.
+
+2) March 2006 with 15 channels; July 2014 with 13 channels; August 2014 with 12 channels
+Commands used: cut, sort, uniq, head, awk
+Explanation: For "cut -d',' -f20,21 Global\ YouTube\ Statistics.csv", it takes the data from columns 20 & 21 which are the month and year created while -d to show that the comma is a delimiter. After that, "sort" is used so that the month/year are arranged properly so then "uniq -c" is used to count the number of duplicated lines. Then "sort -rn" will reverse the numerical order so that the highest numbers are first on the list and then I use "head -n 3" to take the top 3 lines that should show the month/year that has the top 3 most channels created. Additionally, I use 'awk '{print $2 $3" with "$1" channels"}'' to format the output to show year/month with xx amount of channels.
+
+3) ps aux | grep alexsp24
+Output:
+alexsp24  107518  0.0  0.0  17856  6720 ?        Ss   Mar13   0:02 tmux
+alexsp24  112583  0.0  0.0  19840  6912 pts/22   Ss+  Mar13   0:00 -bash
+alexsp24  115717  0.0  0.0  19840  6912 pts/23   Ss+  Mar13   0:00 -bash
+alexsp24  115985  0.0  0.0  19840  6912 pts/26   Ss+  Mar13   0:00 -bash
+alexsp24  117068  0.0  0.0  19840  6912 pts/14   Ss+  Mar13   0:00 -bash
+root     2802463  0.0  0.0  56064 18368 ?        Ss   13:20   0:00 sshd: alexsp24 [priv]
+alexsp24 2802476  0.0  0.0  49664 13312 ?        S    13:20   0:00 sshd: alexsp24@pts/0
+alexsp24 2802477  0.0  0.0  19904  7680 pts/0    Ss   13:20   0:00 -bash
+alexsp24 2818040  0.0  0.0  19840  7424 pts/7    Ss+  14:05   0:00 -bash
+alexsp24 2818260  0.0  0.0  19840  6976 pts/9    Ss+  14:06   0:00 -bash
+root     2822015  0.0  0.0  56064 18432 ?        Ss   14:16   0:00 sshd: alexsp24 [priv]
+alexsp24 2822149  0.0  0.0  49280 10368 ?        S    14:17   0:00 sshd: alexsp24@pts/17
+alexsp24 2822151  0.0  0.0  19776  7616 pts/17   Ss+  14:17   0:00 -bash
+alexsp24 2823962  0.0  0.0  26112 11904 pts/17   T    14:22   0:00 vim Assignment2.txt
+alexsp24 2824632  0.0  0.0  25344  8000 pts/0    R+   14:24   0:00 ps aux
+alexsp24 2824633  0.0  0.0   8320  1792 pts/0    S+   14:24   0:00 grep --color=auto alexsp24
+alexsp24 2824635  0.0  0.0   6912  1472 ?        S    14:24   0:00 sleep 1
+alexsp24 3304023  0.0  0.0  28736 15168 ?        Ss   Mar11   7:22 /usr/lib/systemd/systemd --user
+alexsp24 3304025  0.0  0.0 208512 10816 ?        S    Mar11   0:00 (sd-pam)
+alexsp24 3318005  0.0  0.0   8960  4800 ?        S    Mar11   3:28 bash infDate.sh
+
+4b) 
+Output:
+alexsp24  107518  0.0  0.0  17856  6720 ?        Ss   Mar13   0:02 tmux
+alexsp24  112583  0.0  0.0  19840  6912 pts/22   Ss+  Mar13   0:00 -bash
+alexsp24  115717  0.0  0.0  19840  6912 pts/23   Ss+  Mar13   0:00 -bash
+alexsp24  115985  0.0  0.0  19840  6912 pts/26   Ss+  Mar13   0:00 -bash
+alexsp24  117068  0.0  0.0  19840  6912 pts/14   Ss+  Mar13   0:00 -bash
+root     2802463  0.0  0.0  56064 18368 ?        Ss   13:20   0:00 sshd: alexsp24 [priv]
+alexsp24 2802476  0.0  0.0  49664 13312 ?        S    13:20   0:00 sshd: alexsp24@pts/0
+alexsp24 2802477  0.0  0.0  19904  7680 pts/0    Ss   13:20   0:00 -bash
+alexsp24 2818040  0.0  0.0  19840  7424 pts/7    Ss+  14:05   0:00 -bash
+alexsp24 2818260  0.0  0.0  19840  6976 pts/9    Ss+  14:06   0:00 -bash
+root     2822015  0.0  0.0  56064 18432 ?        Ss   14:16   0:00 sshd: alexsp24 [priv]
+alexsp24 2822149  0.0  0.0  49280 10368 ?        S    14:17   0:00 sshd: alexsp24@pts/17
+alexsp24 2822151  0.1  0.0  19776  6848 pts/17   Ss   14:17   0:00 -bash
+alexsp24 2822195  0.1  0.0  26112 11840 pts/0    S+   14:17   0:00 vim file.txt
+alexsp24 2822272  0.0  0.0   6912  1472 ?        S    14:17   0:00 sleep 1
+alexsp24 2822273  0.0  0.0  25344  8064 pts/17   R+   14:17   0:00 ps aux
+alexsp24 2822274  0.0  0.0   8320  1792 pts/17   S+   14:17   0:00 grep --color=auto alexsp24
+alexsp24 3304023  0.0  0.0  28736 15168 ?        Ss   Mar11   7:22 /usr/lib/systemd/systemd --user
+alexsp24 3304025  0.0  0.0 208512 10816 ?        S    Mar11   0:00 (sd-pam)
+alexsp24 3318005  0.0  0.0   8960  4800 ?        S    Mar11   3:28 bash infDate.sh
+
+The Process ID is 2822273 and it's considered a process when in vim.
+
+4d)
+Output:
+alexsp24  107518  0.0  0.0  17856  6720 ?        Ss   Mar13   0:02 tmux
+alexsp24  112583  0.0  0.0  19840  6912 pts/22   Ss+  Mar13   0:00 -bash
+alexsp24  115717  0.0  0.0  19840  6912 pts/23   Ss+  Mar13   0:00 -bash
+alexsp24  115985  0.0  0.0  19840  6912 pts/26   Ss+  Mar13   0:00 -bash
+alexsp24  117068  0.0  0.0  19840  6912 pts/14   Ss+  Mar13   0:00 -bash
+root     2802463  0.0  0.0  56064 18368 ?        Ss   13:20   0:00 sshd: alexsp24 [priv]
+alexsp24 2802476  0.0  0.0  49664 13312 ?        S    13:20   0:00 sshd: alexsp24@pts/0
+alexsp24 2802477  0.0  0.0  19904  7680 pts/0    Ss+  13:20   0:00 -bash
+alexsp24 2818040  0.0  0.0  19840  7424 pts/7    Ss+  14:05   0:00 -bash
+alexsp24 2818260  0.0  0.0  19840  6976 pts/9    Ss+  14:06   0:00 -bash
+root     2822015  0.0  0.0  56064 18432 ?        Ss   14:16   0:00 sshd: alexsp24 [priv]
+alexsp24 2822149  0.0  0.0  49280 10368 ?        S    14:17   0:00 sshd: alexsp24@pts/17
+alexsp24 2822151  0.0  0.0  19776  7616 pts/17   Ss   14:17   0:00 -bash
+alexsp24 2823831  0.0  0.0   6912  1408 ?        S    14:21   0:00 sleep 1
+alexsp24 2823834  0.0  0.0  25344  8000 pts/17   R+   14:21   0:00 ps aux
+alexsp24 2823835  0.0  0.0   8320  1792 pts/17   S+   14:21   0:00 grep --color=auto alexsp24
+alexsp24 3304023  0.0  0.0  28736 15168 ?        Ss   Mar11   7:22 /usr/lib/systemd/systemd --user
+alexsp24 3304025  0.0  0.0 208512 10816 ?        S    Mar11   0:00 (sd-pam)
+alexsp24 3318005  0.0  0.0   8960  4800 ?        S    Mar11   3:28 bash infDate.sh
+
+Now that I quit vi mode from the first terminal, it also updates on the second terminal that I quit from the vi mode in the processes list.
+
+5) The init process in Linux is the first process that runs when Linux is booted up which is usually invoked by kernel as Process ID 1 which in the IBM VM case it's systemd that's Process ID 1. 
+I used "ps aux | grep systemd" and it was the first process on the list.
+
+6) The 'ps aux' shows all processes and their statuses on the entire system. 'ps' shows the processes in the current terminal session, while 'a' shows all processes, 'u' formats in a user-oriented format and 'x' makes ps show processes that are not from the current terminal session as well.
