@@ -1,0 +1,2 @@
+1060	 cut -d',' -f8,16 'Global YouTube Statistics.csv' | sort -t',' -k1,1 -k2,2nr | awk -F ',' '($1=="India" && !india++) || ($1=="United States" && !us++) || ($1=="United Kingdom" && !uk++)'
+1070	 cut -d',' -f3,6 'Global YouTube Statistics.csv' | awk -F ',' '$2=="Sports" || $2=="Entertainment" || $2=="Education"' | sort -t',' -k2,2 -k1,1nr | awk -F ',' '!seen[$2]++'
