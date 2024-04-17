@@ -1,0 +1,36 @@
+Task 1:
+Command(s) used to solve: 
+last
+wc -l last.fake
+grep "sp24" last.fake > lastsp24.fake
+wc -l lastsp24.fake
+
+Output of Command: 
+507 last.fake
+478 lastsp24.fake
+
+
+Task 2:
+Command(s) used to solve:
+grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1}' | sort -u | awk '{print $0} END {print "Kudos to these people for putting in the work"}'
+
+Output of Command:
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+Task 3:
+Command(s) used to solve:
+Output of Command:
+
