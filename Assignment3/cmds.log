@@ -95,3 +95,7 @@
 1013	 sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
 1014	 sed 's/[a-zA-Z0-9 ]//g' | sort -u passwd.fake 
 1015	 sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+1028	 echo "Night Owls List:" && awk '($6 >= "23:00" || $6 <= "04:00") && ($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq && echo "Night Owls are dope. Please ensure you get enough sleep though."
+1029	 cd Assignment3
+1030	 echo "Night Owls List:" && awk '($6 >= "23:00" || $6 <= "04:00") && ($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq && echo "Night Owls are dope. Please ensure you get enough sleep though."
+1031	 echo "Early Birds List:" && awk '($6 >= "05:00" || $6 <= "09:00") && ($7 >= "05:00" || $7 <= "09:00") {print $1}' lastsp24.fake | sort | uniq && echo "Early Birds are dope. Please ensure you get enough sleep though."
