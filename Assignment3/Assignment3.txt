@@ -31,6 +31,178 @@ xuebosp24
 Kudos to these people for putting in the work
 
 Task 3:
-Command(s) used to solve:
+Command(s) used to solve: 
+echo "Night Owls List:" && awk '($6 >= "23:00" || $6 <= "04:00") && ($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq && echo "Night Owls are dope. Please ensure you get enough sleep though."
 Output of Command:
+Night Owls List:
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+athishsp24
+ayesp24
+billysp24
+brandonsp24
+breannasp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jimmysp24
+justinsp24
+khushisp24
+kobesp24
+madhavsp24
+matthewsp24
+maysp24
+megansp24
+nicolesp24
+robertosp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+Task 4:
+Command(s) used to solve:
+echo "Early Birds List:" && awk '($6 >= "05:00" || $6 <= "09:00") && ($7 >= "05:00" || $7 <= "09:00") {print $1}' lastsp24.fake | sort | uniq && echo "Early Birds are dope. Please ensure you get enough sleep though."
+
+Output of Command:
+Early Birds List:
+aarushisp24
+aayushsp24
+acesp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+atishaysp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+brandonsp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+hardiksp24
+jadonsp24
+jaydevsp24
+jessesp24
+jimmysp24
+jonathansp24
+justinsp24
+kevinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+michellesp24
+nhatsp24
+nicholsonsp24
+nicolesp24
+piercesp24
+pratiksp24
+rickysp24
+robertosp24
+robertsp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Early Birds are dope. Please ensure you get enough sleep though.
+
+Task 5:
+Command(s) used to solve:
+awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq
+
+Output of Command:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+Task 6:
+Command(s) used to solve:
+awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake
+
+Output of Command:
+angie23fa:x:1004:1004::/mnt/scratch/angie23fa:/bin/bash
+areebah23fa:x:1016:1016::/mnt/scratch/areebah23fa:/bin/bash
+apple23fa:x:1018:1018::/mnt/scratch/apple23fa:/bin/bash
+ajay23fa:x:1030:1030::/mnt/scratch/ajay23fa:/bin/bash
+alan23fa:x:1032:1032::/mnt/scratch/alan23fa:/bin/bash
+amreenf23:x:1150:1150::/mnt/scratch/FA23_CS131_Ashish/amreenf23:/bin/bash
+acesp24:x:1174:1174::/mnt/scratch/FA23_CS131_Ashish/acesp24:/bin/bash
+akashsp24:x:1190:1190::/mnt/scratch/FA23_CS131_Ashish/akashsp24:/bin/bash
+ayesp24:x:1200:1200::/mnt/scratch/SP24_CS131_Jyotika/ayesp24:/bin/bash
+alexsp24:x:1202:1202::/mnt/scratch/SP24_CS131_Jyotika/alexsp24:/bin/bash
+aayushsp24:x:1204:1204::/mnt/scratch/SP24_CS131_Jyotika/aayushsp24:/bin/bash
+ajaysp24:x:1230:1230::/mnt/scratch/SP24_CS131_Jyotika/ajaysp24:/bin/bash
+ashish:x:1240:1240::/mnt/scratch/FA23_CS131_Ashish/ashish:/bin/bash
+amansp24:x:1242:1242::/mnt/scratch/SP24_CS131_Jyotika/amansp24:/bin/bash
+
+Task 7:
+Command(s) used to solve:
+sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+
+Output of Command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
 

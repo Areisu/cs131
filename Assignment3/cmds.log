@@ -1,0 +1,97 @@
+919	 mkdir Assignment3
+920	 cd Assignment3
+921	 touch Assignment3.txt
+922	 vim Assignment3.txt
+923	 wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
+924	 wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
+925	 last
+926	 grep "sp24" last.fake 
+927	 grep "sp24" last.fake > lastsp24.fake
+928	 cat lastsp24.fake
+929	 wc -l last.fake
+930	 wc -l lastsp24.fkae
+931	 wc -l lastsp24.fake
+932	 vim
+933	 vim Assignment3.txt
+934	 ls
+935	 grep "Sun" lastsp24.fake
+936	 grep "Sun" lastsp24.fake | awk f,1
+937	 grep "Sun" lastsp24.fake | awk {print $1}
+938	 grep "Sun" lastsp24.fake | awk '{print $1}'
+939	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq
+940	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort
+941	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: " {print $1}' | uniq | sort
+942	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: "} {print $1}' | uniq | sort
+943	 awk 'BEGIN {print "The list of people who worked on Sunday are: "} {print $1}' | uniq | sort | grep "Sun" lastsp24.fake
+944	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: "} {print $1}' | uniq | sort
+945	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: "} END {print $1}' | uniq | sort
+946	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: "} END {print "Kudos to these people for putting in the work"} {print $1}' | uniq | sort
+947	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: "} END {print "Kudos to these people for putting in the work"}' | uniq | sort
+948	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are: "} {print $1} END {print "Kudos to these people for putting in the work"}' | uniq | sort
+949	 grep "Sun" lastsp24.fake | awk '{print $1} | uniq | sort
+950	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort
+951	 grep "Sun" lastsp24.fake | awk '{print $1} | uniq -d| sort
+952	 grep "Sun" lastsp24.fake | awk '{print $1} | uniq -d | sort
+953	 grep "Sun" lastsp24.fake | awk '{print $1} | uniq -d | sort -u -t
+954	 grep "Sun" lastsp24.fake | awk '{print $1} | uniq | sort -u -t
+955	 grep "Sun" lastsp24.fake | awk '{print $1} | uniq | sort -u -t, -k1,1
+956	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort -u -t, -k1,1
+957	 grep "Sun" lastsp24.fake | awk -F '{print $1}' | uniq | sort -u -t, -k1,1
+958	 grep "Sun" lastsp24.fake | awk -F, '{print $1}' | uniq | sort -u -t, -k1,1
+959	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort -u -t, -k1,1
+960	 grep "Sun" lastsp24.fake | awk 'BEGIN{print $1}' | uniq | sort -u -t, -k1,1
+961	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "test"} {print $1}' | uniq | sort -u -t, -k1,1
+962	 grep "Sun" lastsp24.fake | uniq | sort -u -t, -k1,1
+963	 grep "Sun" lastsp24.fake | uniq | sort -u -t, -k1,1 | awk {print $1}
+964	 grep "Sun" lastsp24.fake | uniq | sort -u -t, -k1,1 | awk '{print $1}'
+965	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort -u -t, -k1,1
+966	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort -u -t, -k1,1 | awk 'BEGIN {print "The list of people who worked on Sunday are: "}
+967	 grep "Sun" lastsp24.fake | awk '{print $1}' | uniq | sort -u -t, -k1,1 | awk 'BEGIN {print "The list of people who worked on Sunday are: "}'
+968	 grep "Sun" lastsp24.fake | awk '{print $1 | sort -u -t, k1,1}'
+969	 grep "Sun" lastsp24.fake | awk '{print $1 | "sort -u -t, k1,1"}'
+970	 grep "Sun" lastsp24.fake | awk '{print $1}'
+971	 grep "Sun" lastsp24.fake | awk '{print $1 | sort -u}'
+972	 grep "Sun" lastsp24.fake | awk '{print $1}' | sort -u -t, k1,1
+973	 grep "Sun" lastsp24.fake | awk '{print $1}' | sort -u -t, -k1,1
+974	 grep "Sun" lastsp24.fake | awk '{print $1 | sort -u -t, -k1,1}'
+975	 grep "Sun" lastsp24.fake | awk '{print $1 | sort -u -t -k1,1}'
+976	 grep "Sun" lastsp24.fake | awk '{print $1 | "sort -u -t -k1,1"}'
+977	 grep "Sun" lastsp24.fake | awk '{print $1 | "sort -u -t, -k1,1"}'
+978	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"{print $1 | "sort -u -t, -k1,1"}'
+979	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"}'
+980	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work"}
+981	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work"}'
+982	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work" | uniq}'
+983	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work"}'
+984	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work" NF}'
+985	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "\n Kudos to these people for putting in the work" NF}'
+986	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work"}'
+987	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {printf "Kudos to these people for putting in the work"}'
+988	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"} END {print "Kudos to these people for putting in the work"}'
+989	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1}' | sort -u | awk '{print $0} END {print "Kudos to these people for putting in the work"}'
+990	 grep "Sun" lastsp24.fake | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print $1 | "sort -u -t, -k1,1"}' | awk '{print $0} END {print "Kudos to these people for putting in the work"}'
+991	 vim Assignment3.txt
+992	 cd ..
+993	 git init
+994	 git add Assignment3
+995	 git commit -m "Added Assignment3, completed Task 1 and 2"
+996	 git push origin master
+997	 cd Assignment3
+998	 awk '$1 ~ /^t/' lastsp24.fake
+999	 awk '$1 ~ /^t/' lastsp24.fake | sort | uniq
+1000	 awk '$1 ~ /^t/' lastsp24.fake | sort -u
+1001	 awk '$1 ~ /^t/' lastsp24.fake
+1002	 awk '$1 ~ /^t/' lastsp24.fake | sort
+1003	 awk '$1 ~ /^t/' lastsp24.fake | sort | uniq
+1004	 awk '$1 ~ /^t/ | sort -u' lastsp24.fake 
+1005	 awk '$1 ~ /^t/ {print $1}' lastsp24.fake
+1006	 awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq
+1007	 vim Assignment3.txt 
+1008	 cat passwd.fake
+1009	 awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake
+1010	 awk -F':' '$1 ~ /^a/ && $2 % 2 == 0' passwd.fake
+1011	 awk -F':' '$1 ~ /^a/ && $3 % 2 == 0' passwd.fake
+1012	 vim Assignment3.txt 
+1013	 sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+1014	 sed 's/[a-zA-Z0-9 ]//g' | sort -u passwd.fake 
+1015	 sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
