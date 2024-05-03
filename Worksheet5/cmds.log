@@ -1,0 +1,42 @@
+1001	 mkdir Worksheet5
+1002	 cp 'Global YouTube Statistics.csv' Worksheet5
+1003	 cd Worksheet5
+1004	 ls
+1005	 vim US_category_script.sh
+1006	 ls
+1007	 rm US_category_script.sh 
+1008	 vim US_categories_script.sh
+1009	 ./US_categories_script.sh
+1010	 chmod +x US_categories_script.sh 
+1011	 ./US_categories_script.sh
+1012	 ls
+1013	 cd Worksheet\ 5/
+1014	 ls
+1015	 cd ..
+1016	 ls
+1017	 cp US_categories_script.sh ..
+1018	 cd ..
+1019	 ls
+1020	 vim US_categories_script.sh 
+1021	 ./US_categories_script.sh 
+1022	 cd Worksheet5
+1023	 ls
+1024	 rm 'Worksheet 5'
+1025	 rmdir 'Worksheet 5'
+1026	 rm -rf 'Worksheet 5'
+1027	 ls
+1028	 touch ws5.txt
+1029	 ls
+1030	 history
+1031	 ls
+1032	 cd 'United States'
+1033	 ls
+1034	 cat Comedy.txt
+1035	 wc
+1036	 ls
+1037	 wc Comedy.txt
+1038	 wc Entertainment.txt
+1039	 wc Gaming.txt
+1040	 wc Music.txt
+1041	 cd ..
+1042	 vim ws5.txt
